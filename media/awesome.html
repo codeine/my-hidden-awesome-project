@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>awesome</title>
+
+    <link href="awesome_files/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="awesome_files/normalize.css">
+    <link rel="stylesheet" href="awesome_files/skeleton.css">
+  </head>
+  <body>
+    <div class="container" style="margin-top: 24px">
+      <div class="row">
+        <div class="column">
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at
+            neque esse rerum ipsam? Delectus quos deserunt tempora explicabo at
+            quisquam temporibus, ducimus eaque error facilis odio ad sit culpa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            debitis? Id tempore laborum veritatis recusandae pariatur commodi
+            facere, aliquam ut adipisci veniam, facilis quae odit repellat atque
+            hic! Corrupti, adipisci. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. In, facilis adipisci. Odio facere sint autem
+            dolores fuga ex quod, laborum nisi architecto nulla dicta suscipit
+            laboriosam, quam corporis, natus blanditiis?
+          </p>
+        </div>
+        <div class="column">
+          <h4>Subtitle</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+            maiores quo nulla ducimus ipsam fugit, quam ut consectetur incidunt
+            soluta. Officiis non numquam laborum suscipit quasi! Doloribus alias
+            inventore ipsum!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+            beatae ullam consectetur exercitationem in provident, praesentium
+            ipsam quia, commodi molestias quos. Animi atque suscipit dignissimos
+            aperiam in architecto quasi. Suscipit?
+          </p>
+        </div>
+        <div class="column">
+          <h4>Smudge Cat</h4>
+          <img src="awesome_files/smudge.avif" alt="smudge the cat">
+        </div>
+        <div class="column">
+          <h4>Cat video</h4>
+          <img src="awesome_files/cats.gif">
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
